@@ -27,6 +27,11 @@ public class PlayerMovement : MonoBehaviour
     public int rubyPower = 1;
     private bool isAlive = true;
 
+    public AudioManager audioManager;
+
+    private void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -83,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
+            audioManager.PlaySFX(audioManager.jump); 
         }
     }
 

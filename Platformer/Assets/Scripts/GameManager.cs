@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public int numCoinsCollected = 0;
     public int numRubiesCollected = 0;
     public int numCoinsInLevel = 25;
-    // public ScoreBar scoreBar;
+    public ScoreBar scoreBar;
     public TextMeshProUGUI winMessage;
     public GameObject gameOverScreen;
     string sceneName;
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int value) {
         score += value;
         numCoinsCollected += 1;
-        // scoreBar.UpdateScoreBar(numCoinsCollected);
+        scoreBar.UpdateScoreBar(numCoinsCollected);
         CheckEndGame();
     }
 
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
             winMessage.SetText("You Lost");
         }
 
-        //GameObject.FindWithTag("Player").SetActive(false);
+        // GameObject.FindWithTag("Player").SetActive(false);
         gameOverScreen.SetActive(true);
         Time.timeScale = 0;
     }

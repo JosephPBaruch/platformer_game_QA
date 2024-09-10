@@ -7,6 +7,12 @@ public class Coin : MonoBehaviour
     public int coinValue = 1; // The value of the coin
     public GameObject gameManagerObject; 
     public GameManager gameManager; 
+    
+    public AudioManager audioManager;
+
+    private void Awake(){
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Start()
     {
@@ -38,6 +44,7 @@ public class Coin : MonoBehaviour
 
                 // Make the coin disappear
                 gameObject.SetActive(false);
+                audioManager.PlaySFX(audioManager.coinget);
             }
             else
             {
