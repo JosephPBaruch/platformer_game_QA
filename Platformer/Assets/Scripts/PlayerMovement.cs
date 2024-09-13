@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
-            audioManager.PlaySFX(audioManager.jump); 
+            // audioManager.PlaySFX(audioManager.jump); 
         }
     }
 

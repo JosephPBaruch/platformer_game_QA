@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip jump;
     public AudioClip coinget;
+    public AudioClip background; 
 
     void Start(){
         musicSource.clip = background;

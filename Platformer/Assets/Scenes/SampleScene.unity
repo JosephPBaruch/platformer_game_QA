@@ -904,7 +904,7 @@ GameObject:
   - component: {fileID: 564183362}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 805087535}
   m_Layer: 0
   m_Name: SFX
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2106,6 +2106,7 @@ GameObject:
   - component: {fileID: 1108769881}
   - component: {fileID: 1108769885}
   - component: {fileID: 1108769886}
+  - component: {fileID: 1108769887}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -2122,8 +2123,8 @@ Transform:
   m_GameObject: {fileID: 1108769879}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -799.19, y: -563.64, z: 0}
-  m_LocalScale: {x: 0.1877, y: 0.1692, z: 1}
+  m_LocalPosition: {x: -1281.8, y: -718.28, z: 0}
+  m_LocalScale: {x: 0.6137355, y: 0.6027978, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 784153371}
@@ -2253,7 +2254,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f7f7c281b669c4ad899a45fa7d776c20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2306,12 +2307,33 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.00014972687, y: -0.000108242035}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &1108769887
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108769879}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f3013e8e598b447ae8221de67e32b13c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1111472140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2430,8 +2452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinValue: 1
   gameManagerObject: {fileID: 0}
-  gameManager: {fileID: 0}
-  audioManager: {fileID: 0}
+  gameManager: {fileID: 923864884}
+  audioManager: {fileID: 2111950122}
 --- !u!58 &1342496893
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2555,8 +2577,8 @@ Transform:
   m_GameObject: {fileID: 1342496891}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.27, y: 1.84, z: 0}
-  m_LocalScale: {x: 0.2025, y: 0.4683, z: 1}
+  m_LocalPosition: {x: -1.986, y: 1.863, z: 0}
+  m_LocalScale: {x: 0.2025, y: 0.19902751, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3247,7 +3269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACAn+uiNXIUNQAAAD4AAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgDilmSkgdnQskFNSWZDql5ibChGoBQBQSwECLQAUAAAICAAAgJ/rojVyFDUAAAA+AAAACQAkAAAAAAAAAAAAAAAAAAAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAABAAEAWwAAAIAAAAAAAA==
+    dataString: UEsDBBQAAAgIAACAn+s5aZwPggIAAEMFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoWxwCV2b61DSA9JmJBOLr4Ia401CMkjyQGS4b93JRvsUl8sv/16+3blLyKUraFw2iyN4E+aA/kxIv5Mvo164yMc2VartfiEi8+74K7yTiz4vDInNOLUh1m9B2dE8VNtpXeOEGyUKLXZL/gWMm2dRbhk0gKajHY+WiH0NSJHfI1TH3LC0/TOnz7xlEajMx4LUA5M70onaXi+T7sIOqHpNEpnNFmMo7sumE5mUUSjJIkXYzoLiRpVSLavgfuuBvniLk8SvBS22zn41gotpbAdV+JOddAiY7VtsFN04IJh74Eg1kSgArGtnO9kGP5SlhZcJ41hp3thUMQ2L/mlW2X3zO5aYh9MNr7SPA6k2pxP/5nHNJhLo/ePl7I08iVcJYrdKzsVzLqB8kP4fsA8yHNgcsc2Et4rUM96aXSjOBqdaXxoY2F6339eO8sqKHY93lK9AZu61/s66MksiWkyn80HY/MNnYMSx0yK/cb7T+IWWEsd1A+rAgbn9BvZh0WyXV5EPaU/Ft7YdrhxneFBGOvQ1LWsPNeNbox3JYsgoG+tcZk2CgLcdVCDYtKdVpjG3Y7zxjYoe2N5YP5udcU72+XK3IQEuPePohvTSh+uk7OVPjyBrV4aJ4WCnrQ3PKNOmVaq3bahJpewdWNKVgzCto3g/+4ZSYHyeZpwliYUhxaPU8qmJcVrGG/STTSlJCyiUNgnk6uWaCcPTk31yRUu3eWXM1oaVofN54YdluJzr4cEhSr1ujAA6qVNcWUOBqvgJeULLlChNTgnVBg4+cqJ1MUOeH6tmYdWF0dnWN5nyUktPrTzSE6y8JPJiYevm70y8CHg4Itfkp3J+S9QSwMEFAAACAgAAICf67d6grttAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJJlqmGKmaVFSqKlhaGJoYWJrqVholGaoaWlpUmSZZKBkaFSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAICf6zlpnA+CAgAAQwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAICf67d6grttAAAAeAAAAAkAJAAAAAAAAAAAAAAAzwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAACHAwAAAAA=
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -3287,7 +3309,7 @@ MonoBehaviour:
     seed: 0
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
-  showGraphs: 0
+  showGraphs: 1
 --- !u!4 &1666741808
 Transform:
   m_ObjectHideFlags: 0
@@ -3298,7 +3320,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.96947426, y: 1.6434829, z: -0.0001429311}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.17844106, y: 0.91545033, z: 0.91545033}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3693,7 +3715,7 @@ GameObject:
   - component: {fileID: 2111950122}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3714,6 +3736,7 @@ MonoBehaviour:
   SFXSource: {fileID: 805087535}
   jump: {fileID: 8300000, guid: 02d955d4c33dc4551a52a7dfa03113ba, type: 3}
   coinget: {fileID: 8300000, guid: 4676158d6c7f14e65831461ec2c9655e, type: 3}
+  background: {fileID: 0}
 --- !u!4 &2111950123
 Transform:
   m_ObjectHideFlags: 0
