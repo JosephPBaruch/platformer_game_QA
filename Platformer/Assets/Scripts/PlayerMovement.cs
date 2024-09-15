@@ -145,11 +145,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // private void OnTriggerEnter2D(Collider2D collision) {
-    //     // kill player if collided with enemy
-    //     if (collision.gameObject.CompareTag("Enemy")) {
-    //         isAlive = false; 
-    //         gameManager.EndGame();
-    //     }
-    // }
+    private void OnTriggerEnter2D(Collider2D collision) {
+        // kill player if collided with enemy
+        if (collision.gameObject.CompareTag("Enemy")) {
+            isAlive = false; 
+            gameManager.EndGame();
+        }
+    }
 }
