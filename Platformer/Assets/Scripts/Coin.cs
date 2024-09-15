@@ -44,7 +44,7 @@ public class Coin : MonoBehaviour
 
                 // Make the coin disappear
                 gameObject.SetActive(false);
-                audioManager.PlaySFX(audioManager.coinget);
+                //audioManager.PlaySFX(audioManager.coinget);
             }
             else
             {

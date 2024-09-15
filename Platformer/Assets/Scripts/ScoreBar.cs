@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ScoreBar : MonoBehaviour
 {
     public Image scoreBarFill; // Reference to the Image component for the fill
-    public int maxTokens = 1; // Maximum number of tokens
+    public int maxTokens = 11; // Maximum number of tokens
 
     // Method to update the score bar fill amount
     public void UpdateScoreBar(int currentTokens)

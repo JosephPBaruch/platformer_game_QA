@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public int score = 0;
     public int numCoinsCollected = 0;
     public int numRubiesCollected = 0;
-    public int numCoinsInLevel = 25;
+    public int numCoinsInLevel = 11;
     public ScoreBar scoreBar;
     public TextMeshProUGUI winMessage;
     public GameObject gameOverScreen;
@@ -51,14 +51,14 @@ public class GameManager : MonoBehaviour
 
     // Ends game
     public void EndGame() {
-        if (numCoinsCollected == numCoinsInLevel) {
-            winMessage.SetText("You Won");
-        } else {
-            winMessage.SetText("You Lost");
-        }
+        // if (numCoinsCollected == numCoinsInLevel) {
+        //     winMessage.SetText("You Won");
+        // } else {
+        //     winMessage.SetText("You Lost");
+        // }
 
         // GameObject.FindWithTag("Player").SetActive(false);
-        gameOverScreen.SetActive(true);
+        //gameOverScreen.SetActive(true);
         Time.timeScale = 0;
     }
 
