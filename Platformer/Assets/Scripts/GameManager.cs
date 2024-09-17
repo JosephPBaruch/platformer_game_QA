@@ -11,9 +11,10 @@ public class GameManager : MonoBehaviour
     public int numRubiesCollected = 0;
     public int numCoinsInLevel = 11;
     public ScoreBar scoreBar;
-    public TextMeshProUGUI winMessage;
-    public GameObject gameOverScreen;
     string sceneName;
+    [SerializeField] GameObject endScreen;
+    [SerializeField] GameObject lose;
+    [SerializeField] GameObject win;
 
     // Start is called before the first frame update
     void Start()
@@ -51,14 +52,17 @@ public class GameManager : MonoBehaviour
 
     // Ends game
     public void EndGame() {
-        // if (numCoinsCollected == numCoinsInLevel) {
-        //     winMessage.SetText("You Won");
-        // } else {
-        //     winMessage.SetText("You Lost");
-        // }
+        endScreen.SetActive(true);
+        if (numCoinsCollected == numCoinsInLevel)
+        {
+            win.SetActive(true) ;
+        }
+        else
+        {
+            lose.SetActive(true);
+        }
 
-        // GameObject.FindWithTag("Player").SetActive(false);
-        //gameOverScreen.SetActive(true);
+        GameObject.FindWithTag("Player").SetActive(false);
         Time.timeScale = 0;
     }
 
