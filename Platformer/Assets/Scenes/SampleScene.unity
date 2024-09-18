@@ -2608,7 +2608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 0.4
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -4901,7 +4901,6 @@ MonoBehaviour:
   runSprite2: {fileID: 1185422736, guid: 4a52bd4b9e6b24f72b9f6a0ea64cf2ea, type: 3}
   airSprite: {fileID: 209470298, guid: 4a52bd4b9e6b24f72b9f6a0ea64cf2ea, type: 3}
   gameManager: {fileID: 923864884}
-  gameManagerObject: {fileID: 0}
   rubyPower: 1
   audioManager: {fileID: 2111950122}
 --- !u!61 &1680346436
