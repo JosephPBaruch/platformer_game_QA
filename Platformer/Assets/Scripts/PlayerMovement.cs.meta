@@ -3,7 +3,11 @@ guid: 33d72f26b4018431abfa117f315d66cd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - idleSprite: {fileID: 21300000, guid: 31571cfae79b74bf3b4c7fee07757ff2, type: 3}
+  - runSprite1: {fileID: 21300000, guid: 69d2e8c4f80614641933ae1977b8136a, type: 3}
+  - runSprite2: {fileID: 21300000, guid: 499e2c83ce80b4b4f9395586a5c69e8a, type: 3}
+  - airSprite: {fileID: 21300000, guid: ea857d538e8fd41c68e417986f7a5d08, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
