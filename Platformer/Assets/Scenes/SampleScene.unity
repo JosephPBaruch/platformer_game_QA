@@ -1134,6 +1134,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1267,6 +1268,14 @@ MonoBehaviour:
   player: {fileID: 1680346434}
   offset: {x: 0, y: 0, z: 0}
   smoothSpeed: 3
+--- !u!81 &519420034
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 0
 --- !u!1 &564183360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1288,7 @@ GameObject:
   - component: {fileID: 564183362}
   m_Layer: 0
   m_Name: Music
-  m_TagString: Audio
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1309,7 +1318,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d267df315d80747d6a76659ebee0c03d, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1355,7 +1364,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2117,7 +2126,7 @@ GameObject:
   - component: {fileID: 805087535}
   m_Layer: 0
   m_Name: SFX
-  m_TagString: Audio
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4902,7 +4911,6 @@ MonoBehaviour:
   airSprite: {fileID: 209470298, guid: 4a52bd4b9e6b24f72b9f6a0ea64cf2ea, type: 3}
   gameManager: {fileID: 923864884}
   rubyPower: 1
-  audioManager: {fileID: 2111950122}
 --- !u!61 &1680346436
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5836,7 +5844,7 @@ Transform:
   m_GameObject: {fileID: 2111950121}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 795.1081, y: 564.5, z: 0}
+  m_LocalPosition: {x: 0, y: 50, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
